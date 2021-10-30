@@ -25,7 +25,8 @@
           <p>Покупка и подбор спортивных товаров</p>
         </div>
         <div class="container hero__container">
-          <div class="d-flex hero__offer">
+          <!-- специальное предложение слева от меню -->
+          <div class="hero__offer">
             <div class="hero__offer-img">
               <img src="img/hero__offer-bg.png" alt="Лыжи" />
             </div>
@@ -44,21 +45,48 @@
               </div>
             </div>
           </div>
+          <!-- меню в виде плитки -->
           <div class="row">
-            <div class="offset-xxl-6 col-xxl-6">
+            <div
+              class="
+                offset-sm-0
+                col-sm-12
+                offset-md-4
+                col-md-8
+                offset-lg-6
+                col-lg-6
+                offset-xl-6
+                col-xl-6
+                offset-xxl-6
+                col-xxl-6
+              "
+            >
               <!-- категории товаров -->
               <div class="row">
-                <div class="col-xxl-12 hero__category">
+                <div class="col-sm-12 hero__category">
                   <img
                     src="img/hero-img__cat.png"
                     alt="Категории товаров"
                     class="hero__category_bg"
                   />
                   <div class="row">
-                    <div class="offset-xxl-3 col-xxl-5">
+                    <div
+                      class="
+                        offset-sm-2
+                        col-sm-6
+                        offset-md-2
+                        col-md-6
+                        offset-lg-2
+                        col-lg-6
+                        offset-xl-3
+                        col-xl-5
+                        offset-xxl-3
+                        col-xxl-5
+                      "
+                    >
                       <h2 class="hero__category-title">Категории товаров</h2>
                     </div>
-                    <div class="col-xxl-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                       <ul class="hero__list">
                         <li class="hero__item">
                           <a href="/" class="hero__link">Велосипеды</a>
@@ -76,14 +104,19 @@
                           <a href="/" class="hero__link">Горные лыжи</a>
                         </li>
                         <li class="hero__item">
-                          <a href="/" class="hero__link">Теризм</a>
+                          <a href="/" class="hero__link">Туризм</a>
                         </li>
                         <li class="hero__item hero__item_none">
                           <a href="/" class="hero__link">Новый</a>
                         </li>
                       </ul>
                     </div>
-                    <div class="col-xxl-12 d-flex justify-content-end">
+                    <div
+                      class="
+                        col-sm-12 col-md-12 col-lg-12 col-xxl-12
+                        hero__btn-wrap
+                      "
+                    >
                       <button type="button" class="hero__btn">
                         Посмотреть еще...
                       </button>
@@ -94,14 +127,17 @@
               <!-- скидки недели -->
               <div class="row">
                 <div
-                  class="col-xxl-7 d-flex flex-column hero__category-discount"
+                  class="
+                    col-sm-6 col-md-6 col-lg-6 col-xl-7 col-xxl-7
+                    hero__category-discount
+                  "
                 >
                   <h3>Скидки недели</h3>
                   <b>Свежие покрышки</b>
                   <a href="/">Посмотреть..</a>
                   <img src="img/hero__discount-bg.png" alt="Покрышка" />
                 </div>
-                <div class="col-xxl-5">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
                   <div class="row row-cols-1">
                     <div class="col hero__category-top">
                       <h3>Лыжи</h3>
@@ -131,13 +167,145 @@
               </div>
             </div>
           </div>
+          <!-- мобильная версия скидок -->
+          <div class="row hero__m">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-7">
+                  <img
+                    src="img/hero__offer-bg.png"
+                    alt="Лыжи"
+                    class="hero__m-img1"
+                  />
+                  <div class="hero__m-el">
+                    <h2 class="hero__m-title">Аутлет скидок</h2>
+                    <span class="hero__m-text">по видам спорта</span>
+                  </div>
+                  <img
+                    class="hero__m-img2"
+                    src="img/hero__discount-bg.png"
+                    alt="Покрышка"
+                  />
+                </div>
+                <div class="col-5 p-0">
+                  <div class="hero__m-wrap">
+                    <div class="hero__m-subtitle">Каталог</div>
+                    <span class="hero__m-text">со скидками</span>
+                  </div>
+                  <ul class="hero__m-list">
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Велосипеды</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Бег</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Плавание</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Беговые лыжи</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Горные лыжи</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Туризм</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Аксессуары</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Одежда</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">Очки</a>
+                    </li>
+                    <li class="hero__m-item">
+                      <a href="/" class="hero__m-link">еще...</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-m">
+        <div class="container">
+          <div class="new-m__header">
+            <h2 class="new-m__title">Новинки</h2>
+            <a href="/" class="new-m__all">еще...</a>
+          </div>
+          <div
+            id="new-m__slider"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="0"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="new-m__img">
+                  <img
+                    src="img/new-img1.jpg"
+                    class="d-block w-50"
+                    alt="Слайд велосипед"
+                  />
+                </div>
+                <div class="new-m__name">Велосипед stels navigator 350</div>
+                <div class="new-m__price-wrap">
+                  <span class="new-m__price-old">30000</span>
+                  <span class="new-m__price-new">25000</span>
+                </div>
+                <div class="new-m__price-wrap">
+                  <button type="button" class="new-m__btn">Посмотреть</button>
+                  <button type="button" class="new-m__basket"></button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="new-m__img">
+                  <img
+                    src="img/new-img2.jpg"
+                    class="d-block w-50"
+                    alt="Слайд самокат"
+                  />
+                </div>
+                <div class="new-m__name">Велосипед stels navigator 350</div>
+                <div class="new-m__price-wrap">
+                  <span class="new-m__price-old">30000</span>
+                  <span class="new-m__price-new">25000</span>
+                </div>
+                <div class="new-m__price-wrap">
+                  <button type="button" class="new-m__btn">Посмотреть</button>
+                  <button type="button" class="new-m__basket"></button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="new-m__img">
+                  <img
+                    src="img/new-img1.jpg"
+                    class="d-block w-50"
+                    alt="Слайд"
+                  />
+                </div>
+                <div class="new-m__name">Велосипед stels navigator 350</div>
+                <div class="new-m__price-wrap">
+                  <span class="new-m__price-old">30000</span>
+                  <span class="new-m__price-new">25000</span>
+                </div>
+                <div class="new-m__price-wrap">
+                  <button type="button" class="new-m__btn">Посмотреть</button>
+                  <button type="button" class="new-m__basket"></button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-xxl-3">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-3">
             <div class="footer__logo">
               <a href="/" class="footer__logo-link">
                 <img src="img/footer-logo.png" alt="Логотип" />
@@ -147,8 +315,14 @@
               <p>Мы не продем, мы помогаем сделать выбор</p>
             </div>
           </div>
-          <div class="col-xxl-9 d-flex">
-            <div class="col-xxl-2">
+          <div
+            class="
+              col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-9
+              d-flex
+              flex-sm-wrap
+            "
+          >
+            <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
               <div class="footer__title">О попкупке</div>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -180,7 +354,20 @@
                 </li>
               </ul>
             </div>
-            <div class="offset-xxl-1 col-xxl-3">
+            <div
+              class="
+                offset-sm-0
+                col-sm-6
+                offset-md-1
+                col-md-3
+                offset-lg-1
+                col-lg-3
+                offset-xl-1
+                col-xl-3
+                offset-xxl-1
+                col-xxl-3
+              "
+            >
               <div class="footer__title">Компания Кант</div>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -193,7 +380,7 @@
               <a href="/" class="footer__partners">Наши партнеры</a>
               <a href="/" class="footer__policy">Политика конфиденциальности</a>
             </div>
-            <div class="col-xxl-2">
+            <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
               <div class="footer__title">Обратная связь</div>
               <ul class="footer__contacts">
                 <li>
@@ -204,7 +391,20 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xxl-4">
+            <div
+              class="
+                offset-sm-0
+                col-sm-6
+                offset-md-1
+                col-md-3
+                offset-lg-1
+                col-lg-3
+                offset-xl-1
+                col-xl-3
+                offset-xxl-0
+                col-xxl-4
+              "
+            >
               <div class="d-flex footer__social">
                 <p>Присоединяйтесь к нам:</p>
                 <a href="/" class="footer__social-link footer__inst"></a>
@@ -217,5 +417,7 @@
     </footer>
     <!-- js bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script -->
+    <script src="js/script.js"></script>
   </body>
 </html>
