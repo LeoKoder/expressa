@@ -1,0 +1,358 @@
+/* fonts */
+@font-face {
+  font-family: "Montserrat";
+  src: local("MontserratBlack"), local("Montserrat-Black"),
+    url("../fonts/Montserrat-Black.woff") format(".woff"),
+    url("../fonts/Montserrat-Black.woff2") format(".woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("RobotoRegular"), local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff") format(".woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/hero__bg.jpg");
+  padding-top: 70px;
+  padding-bottom: 45px;
+}
+.hero__message {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.hero__message p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 14.06px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
+.hero__container {
+  max-width: 1170px;
+  position: relative;
+}
+
+.hero__offer {
+  padding-top: 60px;
+  position: absolute;
+  overflow: hidden;
+  max-height: 100%;
+  bottom: -45px;
+  left: -10px;
+}
+
+.hero__offer-img {
+  margin-right: 20px;
+}
+
+.hero__offer-title {
+  font-size: 48px;
+  line-height: 58.51px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero__offer-block {
+  margin-bottom: 25px;
+}
+
+.hero__offer-price {
+  padding: 12px 0;
+  width: 53%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.hero__offer-price p {
+  font-size: 24px;
+  line-height: 29.26px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.hero__offer-link {
+  text-align: center;
+  width: 30%;
+  padding: 20px 0;
+  background-color: #000;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.hero__offer-params p {
+  font-size: 18px;
+  line-height: 21.94px;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.hero__category {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 25px;
+  background-color: rgba(70, 70, 70, 0.7);
+}
+.hero__category_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__category-title {
+  font: 900 35px/42.67px "Montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero__list {
+  padding-top: 55px;
+  margin-bottom: 15px;
+}
+
+.hero__item {
+  text-align: right;
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.hero__link {
+  text-transform: uppercase;
+  color: #fff;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.29px;
+}
+
+.hero__item_none {
+  display: none;
+}
+
+.hero__btn {
+  border: none;
+  width: 40%;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.38px;
+}
+
+/* скидки недели */
+.hero__category-discount {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 20px;
+  background: rgba(49, 49, 49, 0.7);
+}
+
+.hero__category-discount > * {
+  color: #fff;
+}
+
+.hero__category-discount h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.26px;
+}
+
+.hero__category-discount b {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.hero__category-discount a {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.hero__category-discount img {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero__category-top {
+  position: relative;
+  padding-top: 25px;
+  padding-left: 15px;
+  background-color: #fff;
+}
+
+.hero__category-top h3 {
+  font-size: 30px;
+  line-height: 36.57px;
+  font-weight: 900;
+}
+
+.hero__category-ski2 {
+  position: absolute;
+  top: 0;
+}
+
+.hero__category-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.hero__category-top a {
+  position: absolute;
+  width: 80px;
+  padding: 5px 0;
+  text-align: center;
+  bottom: 25px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #121416;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hero__category-bot {
+  padding-right: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: radial-gradient(
+    135.25% 69.48% at 50% 50%,
+    #333333 0%,
+    rgba(74, 74, 74, 0) 100%
+  );
+}
+
+.hero__category-bot h3 {
+  font-size: 30px;
+  line-height: 36.57px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.hero__category-bot img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero__category-bot a {
+  text-align: center;
+  padding: 4px 0;
+  width: 38%;
+  color: #000;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* подвал */
+.footer {
+  padding-top: 45px;
+  background-color: #24292d;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.footer__logo {
+  padding-top: 7px;
+  margin-bottom: 10px;
+}
+
+.footer__desc p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.footer__title {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer__item {
+  line-height: 1;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.footer__partners {
+  display: inherit;
+  margin-top: 100px;
+}
+
+.footer__policy {
+  display: inherit;
+  margin-top: 35px;
+}
+
+.footer__contacts li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__social p {
+  margin-right: 10px;
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__inst {
+  margin-right: 10px;
+  background-image: url("../img/footer_inst.jpg");
+}
+
+.footer__you {
+  background-image: url("../img/footer_you.jpg");
+}
