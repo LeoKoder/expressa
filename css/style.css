@@ -997,6 +997,54 @@ body {
     box-shadow: none;
     background-color: #fff;
   }
+  /* страница платеж */
+  .payment {
+    padding: 40px 0;
+  }
+  .payment__desc {
+    margin-bottom: 40px;
+  }
+  .payment__desc p {
+    font-weight: 700;
+  }
+
+  .payment__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment__block:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .payment__subtitle {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .payment__el {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .payment__el input {
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  .payment__el textarea {
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  .payment__el:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 576px) {
   /* hero */
@@ -1151,6 +1199,16 @@ body {
   .search-page__accordion {
     display: block;
   }
+  /* страница платежи */
+  .payment__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .payment__el:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 768px) {
   :root {
@@ -1224,6 +1282,10 @@ body {
 
   .basket__params p:not(:last-child) {
     margin-bottom: 10px;
+  }
+  /* старница платежи */
+  .payment__el {
+    max-width: 300px;
   }
 }
 @media (min-width: 992px) {
@@ -1336,6 +1398,10 @@ body {
   }
   .search-page__inner:not(:last-child) {
     margin-bottom: 10px;
+  }
+  /* страница платежа */
+  .payment__el {
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
