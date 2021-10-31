@@ -34,7 +34,7 @@
               </div>
             </div>
           </div>
-          <div class="row flex-column-reverse flex-sm-row">
+          <div class="row">
             <div class="col-0 col-lg-2">
               <div class="search-page__title bike">Велосипеды</div>
               <ul class="search-page__menu">
@@ -49,7 +49,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-sm-8 col-lg-7 col-xl-8 col-xxl-7">
+            <div class="col-12 col-sm-7 col-lg-7">
               <div class="row">
                 <div class="col-12">
                   <div class="detail-page__img">
@@ -59,7 +59,7 @@
                     Шоссейный велосипед Specialized S-Works Aethos eTap (2021)
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-7">
                       <div class="detail-page__params-left">
                         <div class="brend">
                           <span>Бренд: Specialized</span>
@@ -154,8 +154,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 col-lg-5">
                       <div class="detail-page__params-right">
+                        <span class="old price-old">100000 руб.</span>
                         <span class="price">300000 руб.</span>
                         <div class="detail-page__right-block">
                           <button type="button" class="detail-page__right-btn">
@@ -165,6 +166,47 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="detail-page-m__address">
+                    <input
+                      type="radio"
+                      class="btn-check detail-page__address"
+                      name="addres_options"
+                      id="address1"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label class="btn detail-page__btn" for="address1">
+                      <p>г. Москва ул. Ленина, метро</p>
+                      <b>Веломаркет ЦКЦ</b>
+                      <span>300000 руб</span>
+                    </label>
+
+                    <input
+                      type="radio"
+                      class="btn-check detail-page__address"
+                      name="addres_options"
+                      id="address2"
+                      autocomplete="off"
+                    />
+                    <label class="btn detail-page__btn" for="address2"
+                      ><p>г. Москва ул. Ленина, метро</p>
+                      <b>Веломаркет ЦКЦ</b>
+                      <span>300000 руб</span></label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check detail-page__address"
+                      name="addres_options"
+                      id="address3"
+                      autocomplete="off"
+                    />
+                    <label class="btn detail-page__btn" for="address3"
+                      ><p>г. Москва ул. Ленина, метро</p>
+                      <b>Веломаркет ЦКЦ</b>
+                      <span>300000 руб</span></label
+                    >
                   </div>
                   <div class="detail-page__desc">
                     <b class="arrow">Описание</b>
@@ -220,7 +262,7 @@
                       <span class="access"></span>
                     </div>
                     <div class="row d-flex align-items-center">
-                      <div class="col-4">
+                      <div class="col-12 col-md-4 col-lg-5">
                         <div class="detail-page__left">
                           <div class="detail-page__star">
                             <span class="black"></span>
@@ -232,7 +274,7 @@
                           <div class="detail-page__range">5 из 5</div>
                         </div>
                       </div>
-                      <div class="col-8">
+                      <div class="col-12 col-md-8 col-lg-7">
                         <div class="detail-page__right">
                           <div class="detail-page__star-block">
                             <div class="detail-page__star-el">
@@ -322,9 +364,10 @@
             <div
               class="
                 offset-0
-                col-12
+                col-0
                 offset-sm-0
-                col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-3
+                col-sm-5 col-md-4 col-lg-3 col-xl-3
+                detail-page__address
               "
             >
               <div class="detail-page__title">В наличии</div>
