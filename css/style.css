@@ -401,6 +401,76 @@ body {
   color: #000;
 }
 
+/* страница поиск */
+.search-page {
+  padding: 40px 0;
+}
+
+.search-page__card {
+  margin-bottom: 40px;
+}
+
+.search-page__img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.search-page__img img {
+  width: 100%;
+}
+
+.search-page__like {
+  position: absolute;
+  right: 0;
+  width: 24.1px;
+  height: 22.1px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/like.png");
+}
+
+.search-page__name {
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 20.75px;
+  margin-bottom: 10px;
+}
+
+.search-page__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.search-page__info span {
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 200;
+}
+
+.search-page__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-page__price {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23.16px;
+}
+
+.search-page__btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  line-height: 15.85px;
+  font-weight: 300;
+  padding: 0 15px;
+}
+
 /* адаптив */
 @media (min-width: 320px) {
   /* hero */
@@ -901,6 +971,13 @@ body {
     height: 30px;
     background-color: #ededed;
   }
+  /* страница поиска */
+  .search-page__accordion-item .accordion-button:focus,
+  .search-page__accordion-item .accordion-button:not(.collapsed) {
+    border-color: #fff;
+    box-shadow: none;
+    background-color: #fff;
+  }
 }
 @media (min-width: 576px) {
   /* hero */
@@ -1122,6 +1199,22 @@ body {
   .basket__params p:not(:last-child) {
     margin-bottom: 10px;
   }
+  /* страница поиска */
+  .search-page__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36.57px;
+    margin-bottom: 20px;
+  }
+  .search-page__inner a {
+    color: #000;
+    font-size: 16px;
+    line-height: 24.38px;
+    font-weight: 300;
+  }
+  .search-page__inner:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 992px) {
   :root {
@@ -1242,5 +1335,16 @@ body {
   }
   .basket__price-link {
     font-size: 25px;
+  }
+  /* страница поиска */
+  .search-page__title {
+    font-size: 30px;
+  }
+
+  .search-page__inner a {
+    font-size: 20px;
+  }
+  .search-page__inner:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
