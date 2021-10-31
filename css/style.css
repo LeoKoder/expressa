@@ -1256,6 +1256,31 @@ body {
     font-weight: 600;
     margin-bottom: 10px;
   }
+  .payment__submit {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+  }
+
+  .payment__address-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .payment__address-el {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .payment__address-price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .payment__submit-block {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 576px) {
   /* hero */
