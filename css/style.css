@@ -270,7 +270,6 @@ body {
 /* подвал */
 .footer {
   padding-top: 45px;
-  background-color: #24292d;
 }
 
 .footer a {
@@ -284,7 +283,6 @@ body {
 }
 
 .footer__desc p {
-  color: #fff;
   font-size: 13px;
   line-height: 14px;
   font-weight: 400;
@@ -428,14 +426,17 @@ body {
   }
 
   .hero__m-title {
+    text-align: right;
     text-transform: uppercase;
-    width: 42%;
+    width: 70%;
     font-weight: 900;
     margin-bottom: 0;
   }
 
   .hero__m-img2 {
-    width: 82%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
   }
 
   .hero__m-wrap {
@@ -469,17 +470,20 @@ body {
     font-weight: 100;
   }
   /* новинки */
-  .new-m {
+  .new-m,
+  .popular-m {
     display: block;
     padding: 40px 0;
   }
 
-  .new-m__header {
+  .new-m__header,
+  .popular-m__header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
   }
-  .new-m__all {
+  .new-m__all,
+  .popular-m__all {
     padding: 5px 0;
     text-align: center;
     width: 100px;
@@ -488,25 +492,30 @@ body {
     border-radius: 44px;
   }
 
-  .new-m__img {
+  .new-m__img,
+  .popular-m__img {
     display: flex;
     justify-content: center;
   }
 
-  .new-m__name {
+  .new-m__name,
+  .popular-m__name {
     text-align: center;
   }
-  .new-m__price-wrap {
+  .new-m__price-wrap,
+  .popular-m__price-wrap {
     display: flex;
     justify-content: center;
   }
-  .new-m__price-old {
+  .new-m__price-old,
+  .popular-m__price-old {
     font-weight: 600;
     margin-right: 10px;
     position: relative;
   }
 
-  .new-m__price-old:after {
+  .new-m__price-old:after,
+  .popular-m__price-old:after {
     position: absolute;
     top: 45%;
     left: 0;
@@ -517,11 +526,13 @@ body {
     background-color: #ff0000;
     transform: rotate(10.92deg);
   }
-  .new-m__price-new {
+  .new-m__price-new,
+  .popular-m__price-new {
     font-weight: 600;
   }
 
-  .new-m__btn {
+  .new-m__btn,
+  .popular-m__btn {
     border: none;
     padding: 10px;
     font-weight: 600;
@@ -542,6 +553,61 @@ body {
     background-position: 50%;
     background-size: 50%;
     background-image: url("../img/basket.png");
+  }
+  .footer {
+    background-color: #fff;
+  }
+  .footer__img {
+    display: none;
+  }
+  .footer-m__img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .footer__desc p {
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+  }
+  .footer__nav {
+    display: none;
+  }
+  /* аккордеон в подвале */
+  .footer-m__accordion {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .footer-m__accordion .accordion-item {
+    border: none;
+  }
+  .footer-m__accordion .accordion-button {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  /* меню в подвале */
+  .footer-m__menu {
+    padding: 20px 10px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-m__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-m__inner a {
+    text-align: center;
+    color: #fff;
+  }
+  .footer-m__symbol span {
+    width: 1px;
+    height: 100%;
+    display: block;
+    background-color: #fff;
   }
 }
 @media (min-width: 576px) {
@@ -609,7 +675,34 @@ body {
     display: none;
   }
   /* новинки */
-  .new__m {
+  .new-m {
+    display: none;
+  }
+  .popular-m {
+    display: none;
+  }
+  .footer {
+    background-color: #24292d;
+  }
+
+  .footer__img {
+    display: block;
+  }
+  .footer-m__img {
+    display: none;
+  }
+  .footer__desc p {
+    text-align: left;
+    color: #fff;
+  }
+  .footer__nav {
+    display: flex;
+  }
+  /* меню в подвале */
+  .footer-m__menu {
+    display: none;
+  }
+  .footer-m__accordion {
     display: none;
   }
 }
