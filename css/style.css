@@ -972,6 +972,25 @@ body {
     background-color: #ededed;
   }
   /* страница поиска */
+  .search-page__desc {
+    display: none;
+  }
+  .search-page__title.bike {
+    display: none;
+  }
+  .search-page__title {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36.57px;
+    margin-bottom: 20px;
+  }
+  .search-page__menu {
+    display: none;
+  }
+  .search-page__accordion {
+    margin-bottom: 40px;
+  }
   .search-page__accordion-item .accordion-button:focus,
   .search-page__accordion-item .accordion-button:not(.collapsed) {
     border-color: #fff;
@@ -1125,6 +1144,13 @@ body {
   .basket__delivery {
     display: none;
   }
+  /* страница поиска */
+  .search-page__desc {
+    display: block;
+  }
+  .search-page__accordion {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   :root {
@@ -1197,22 +1223,6 @@ body {
   }
 
   .basket__params p:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  /* страница поиска */
-  .search-page__title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36.57px;
-    margin-bottom: 20px;
-  }
-  .search-page__inner a {
-    color: #000;
-    font-size: 16px;
-    line-height: 24.38px;
-    font-weight: 300;
-  }
-  .search-page__inner:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -1311,6 +1321,21 @@ body {
   }
   .basket__price-subtitle {
     font-size: 16px;
+  }
+  .search-page__title.bike {
+    display: block;
+  }
+  .search-page__menu {
+    display: block;
+  }
+  .search-page__inner a {
+    color: #000;
+    font-size: 16px;
+    line-height: 24.38px;
+    font-weight: 300;
+  }
+  .search-page__inner:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 1200px) {
