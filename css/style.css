@@ -1281,6 +1281,19 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  /* страница партнеров */
+
+  .search-page__block a {
+    color: #000;
+  }
+  .partners__btn {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+  }
 }
 @media (min-width: 576px) {
   /* hero */
