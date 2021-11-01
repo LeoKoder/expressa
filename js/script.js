@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function () {
-  var myCarousel = document.querySelector("#new-m__slider");
-  var carousel = new bootstrap.Carousel(myCarousel);
+  var myCarousel1 = document.querySelector("#new-m__slider");
+  var carousel1 = new bootstrap.Carousel(myCarousel1);
 
-  var myCarousel = document.querySelector("#popular-m__slider");
-  var carousel = new bootstrap.Carousel(myCarousel);
+  var myCarouse2 = document.querySelector("#popular-m__slider");
+  var carousel2 = new bootstrap.Carousel(myCarousel2);
 });
